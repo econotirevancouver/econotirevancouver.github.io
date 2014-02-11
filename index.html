@@ -7,20 +7,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Econo Tire Vancouver</title>
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <style>
     body {
-      padding-top: 50px;
+        padding-top: 50px;
+        font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
     }
     .main {
-      padding: 40px 15px;
-      width: 100%;
-      max-width: 800px;
-      text-align: center;
-      margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 30px;
+/*        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;*/
+    }
+    .row {
+        margin-left: 0;
     }
     .navbar-inverse {
         /*background-image: linear-gradient(to bottom,#cc0000 0,#222 100%);*/
@@ -29,35 +33,61 @@
         background-color: #cc0000;
     }
     .navbar {
-        height: 100px;
+        height: 125px;
     }
     .navbar .container {
         text-align: center;
+    }
+    .navbar-header {
+        float: none;
     }
     .call-us, .econo-heading {
         color: #cc0000;
     }
     .map {
-        max-width: 450px;
+        position: relative;
         width: 100%;
+        height: 0;
+        padding-bottom: 50%;
     }
-    .econo-heading {
-        font-weight: 900;
+    .map iframe {
+        /*max-width: 450px;*/
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .econo-heading h3{
         text-align: center;
+        font-weight: 500;
     }
     .info {
         width: 100%;
-        max-width: 400px;
         display: inline-block;
+        margin-bottom: 20px;
     }
     .info p {
         text-align: justify;
+        line-height: 25px;
+    }
+    .info img {
+        width: 100%;
     }
     .info-2, .call-us {
         font-weight: bold;
     }
-    .tagline {
+    .tagline, .contact, .contact a {
         color: #ffffff;
+    }
+    .tagline {
+        margin-right: -15px;
+    }
+    .contact a {
+        text-decoration: underline;
+    }
+    h1.main-headline {
+        font-weight: bold;
     }
     </style>
   </head>
@@ -65,8 +95,9 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <h1>ECONO TIRE</h1>
-          <p class="tagline">&quot;The affordable solution&quot;</p>
+          <h1 class="main-headline">ECONO TIRE</h1>
+          <p class="tagline">&quot;The affordable solution&quot; &reg;</p>
+          <p class="contact">322 E. Esplanade | North Van | <a href="tel:+16049888689">604-988-8689</a></p>
         </div>
       </div>
     </div>
@@ -74,16 +105,25 @@
     <div class="container">
 
       <div class="main">
-        <h2 class="econo-heading">Have you had your tires checked lately?</h2>
-        <div class="info">
-            <p class="info-1">The condition of your tires can make a difference in gas mileage
-            and the general handling of your vehicle. Improper inflation or
-            unnoticed tire damage can lead to loss of traction and blow outs.
-            </p>
-            <p class="info-2">Ensure your vehicle stops, steers and stays on the road as well as it should</p>
-            <p class="call-us">Call the experts at Econo Tire today at <a href="tel:6049888689">604-988-8689</a>!</p>
+        <div class="row econo-heading">
+            <h3>HAVE YOU HAD YOUR TIRES CHECKED LATELY?</h3>
         </div>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.321170634404!2d-123.07238600000002!3d49.30820110000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548670525acd2675%3A0xfba757660a2f287c!2s322+Esplanade+E%2C+North+Vancouver%2C+BC+V7L+1A4%2C+Canada!5e0!3m2!1sen!2s!4v1391401145422" height="450" frameborder="0" style="border:0"></iframe>
+        <div class="row info">
+            <div class="col-md-6">
+                <p class="info-1">The condition of your tires can make a difference in gas mileage
+                and the general handling of your vehicle. Improper inflation or
+                unnoticed tire damage can lead to loss of traction and blow outs.
+                </p>
+                <p class="info-2">Ensure your vehicle stops, steers and stays on the road as well as it should.</p>
+                <p class="call-us">Call the experts of Econo Tire today at <a href="tel:6049888689">604-988-8689</a>!</p>
+            </div>
+            <div class="col-md-6">
+                <img src="/img/chevy-equinox.png"></img>
+            </div>
+        </div>
+        <div class="row map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2601.321170634404!2d-123.07238600000002!3d49.30820110000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548670525acd2675%3A0xfba757660a2f287c!2s322+Esplanade+E%2C+North+Vancouver%2C+BC+V7L+1A4%2C+Canada!5e0!3m2!1sen!2s!4v1391401145422" frameborder="0" style="border:0"></iframe>
+        </div>
       </div>
 
     </div><!-- /.container -->
